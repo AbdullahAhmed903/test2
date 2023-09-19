@@ -1,0 +1,232 @@
+body {
+    padding:0px;
+    margin: 0px;
+    background-color: #191d28;
+    color: black;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    font-family:  Oswald,sans-serif;
+    
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .page{
+    display: grid;
+    grid-template-columns:repeat(5,auto);
+    grid-template-rows:repeat(9,auto);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .header{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+  }
+  .header .image img{
+    width: 270px;
+    cursor: pointer;
+  }
+  .header .dropdown{
+    margin-left: 20px;
+  }
+ .header .dropdown button{
+  margin: 8px;
+  margin-top: 0px;
+  background-color: #2e3241;
+  border: none;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 700;
+}
+
+.header .rightheader{
+    display: flex;
+    justify-content: space-between;
+}
+.rightheader .connect button{
+    border: none;
+    color: white;
+    padding: 10px;
+    background-color:#5dc7c2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+.rightheader .connect img{
+    width: 20px;
+    margin-right: 10px;
+}
+.rightheader .mood{
+    width: 65px;
+    height: 35px;
+    background-color: #2e3241;;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    justify-self: center;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+}
+.rightheader .ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: aqua;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    top: 8%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: 10s;
+}
+
+
+
+.content{
+    grid-column: 1/6;
+    grid-row: 2/7;
+    padding: 35px;
+}
+.content h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content .details{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.content .details div{
+    text-align: center;
+    }
+.content .details h3{
+color: #5dc7c2;
+font-size: 45px;
+font-weight: bold;
+}
+.content .details p{
+    color: gray;
+    font-size: 20px;
+    text-transform: capitalize;
+    }
+.content .details .expect h3{
+    color: white;
+    font-size: 65px;
+}
+.content .details .expect p{
+font-weight: bold;
+    font-size: 10px;
+}
+
+.content .tablee{
+    display: flex;
+    width: 100%;
+}
+.content .tablee table{
+    border-collapse:separate;
+    border-spacing: 0 15px;
+    width: 100%;
+}
+.content .tablee table tr:first-child td{
+    color: gray;
+    background-color: #191d28 ;
+    padding:11px;
+
+}
+.content .tablee table td{
+    background-color:#2e3241; 
+    border-style:solid none;
+    padding:10px 20px;
+    color: white;
+}
+.content .tablee table td:first-child {
+    border-left-style:solid;
+    border-top-left-radius:11px;
+    border-bottom-left-radius:11px;
+ }
+ .content .tablee table td:last-child {
+    border-right-style:solid;
+    border-bottom-right-radius:11px;
+    border-top-right-radius:11px;
+ }
+
+ hr{
+    width: 100%;
+    color: white;
+    grid-column: 1/6;
+    grid-row: 7/8;
+    margin: 0px;
+ }
+
+ .footer{
+    position: relative;
+    grid-column: 1/6;
+    grid-row: 8/9;
+    display:  flex;
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+ }
+ .footer div{
+    margin: 0px 5px;
+ }
+
+.footer div:nth-child(2){
+    position: absolute;
+    left: 7%;
+}
+.footer div:last-child a{
+   text-decoration: none;
+   color: gray;
+}
+
+
+.lastbtn{
+   position: fixed;
+   left: 40%;
+   right: 40%;
+   bottom: 0;
+}
+
+
+
+
+
+
